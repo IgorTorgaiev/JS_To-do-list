@@ -1,0 +1,39 @@
+/*
+let addToDoButton = document.getElementById("addToDo");
+let theInputField = document.getElementById("inputField");
+let toDoContainer = document.getElementById("toDoContainer");
+
+
+addToDoButton.addEventListener('click', function(){
+    var paragraph = document.createElement('p')
+    paragraph.innerText = inputField.value;
+    toDoContainer.appendChild(paragraph);
+    inputField.value = "";
+    
+    paragraph.addEventListener('click', function() {
+        paragraph.style.textDecoration = 'Line-through';
+    });
+
+    paragraph.addEventListener('dblclick', function() {
+        toDoContainer.removeChild(paragraph)
+    });
+
+})
+*/
+
+let buttonToDo = document.getElementById('addToDo');
+let inputField = document.getElementById('inputField');
+let toDoContainer = document.getElementById('toDoContainer');
+
+buttonToDo.addEventListener('click', function() {
+    var paragraph = document.createElement('p')
+    paragraph.innerText = inputField.value;
+    toDoContainer.appendChild(paragraph);
+
+    inputField.value = "";
+
+    paragraph.addEventListener('dblclick', function() {
+        toDoContainer.removeChild(paragraph)
+    });
+
+})
